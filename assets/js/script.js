@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // let numbers = document.getElementsByClassName('multiplier');
     for (let number of numbers) {
         number.addEventListener('click', showMult1);
+
+        checkAnswer();
     }
    
 });
@@ -38,7 +40,7 @@ function showMult2() {
     function delay() {
         multiplier2.innerHTML = num2;
         console.log("Multiplier2 is " + multiplier2.innerHTML);
-        
+        showAnswers();
         num2++;
 
         //checkAnswer();   check which button is clicked
@@ -88,7 +90,7 @@ function showAnswers() {
 }
 
 
-//checks which button with answer is clicked, outputs messageto user
+//checks which button with answer is clicked, outputs message to user
 function checkAnswer() {
     for (let btn of buttons) {
         btn.onclick = function () {
