@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Multiplication Trainer</title>
+</head>
+<body>
+     <h1 class="heading">
+         MULTIPLICATION TABLE TRAINER
+     </h1>
+
+     <div class="game-area">
+         <h2>Choose a number to practice multiply:</h2>
+         <div class="numbers">
+             <div class="multiplier" data-value="1">1</div>
+             <div class="multiplier" data-value="2">2</div>
+             <div class="multiplier" data-value="3">3</div>
+             <div class="multiplier" data-value="4">4</div>
+             <div class="multiplier" data-value="5">5</div>
+             <div class="multiplier" data-value="6">6</div>
+             <div class="multiplier" data-value="7">7</div>
+             <div class="multiplier" data-value="8">8</div>
+             <div class="multiplier" data-value="9">9</div>
+             <div class="multiplier" data-value="10">10</div>
+         </div>
+
+         <div class="exercise">
+             <div id="operand1"> 0 </div>
+             <div id="operator"> x </div>
+             <div id="operand2"> 0 </div>
+             <div> = </div>
+             <div id="answer"> ? </div>
+         </div>
+
+         <h2>Choose your answer</h2>
+         <div class="btn-results">
+             <button id="btn0" type="button" class="btn  btn-primary answer">0</button>
+             <button id="btn1" type="button" class="btn  btn-info answer">0</button>
+             <button id="btn2" type="button" class="btn  btn-wrong answer">0</button>
+             <button id="btn3" type="button" class="btn  btn-success answer">0</button>
+         </div>
+         <div class="scores">
+             <h2>Your result:</h2>
+             <p class="scores">Correct: <span id="correct">0</span> / Incorrect: <span id="incorrect">0</span></p>
+
+             <p class="txt-message" id="message"></p>
+         </div>
+
+     </div>
+
+
+
+     <script src="assets/js/script.js"></script>
+</body>
+</html>
