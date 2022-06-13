@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
  *assigns its value to the variable to  the first multiplier, 
  * then outputs Multiplier2 and calculate result
  */
-function showshowMult1() {
+function showMult1() {
     let num1 = parseInt(this.innerHTML);
     //console.log(num1);
 
@@ -88,8 +88,24 @@ function showAnswers() {
 }
 
 
-//checks which button with answer is clicked
-function checkAnswer() {}
+//checks which button with answer is clicked, outputs messageto user
+function checkAnswer() {
+    for (let btn of buttons) {
+        btn.onclick = function () {
+            btn = parseInt(this.innerHTML);
+            console.log("BTN res " + btn);
+            trueRes = calcResult();
+            console.log("TrueRes = " + trueRes);
+            if (trueRes === btn) {
+                alert("Correct! Well done!");
+                countScores();
+            } else {
+                alert("Wrong answer! Correct is " + trueRes);
+                countErrors();
+            }
+        }
+    }
+}
 
 
 /**
