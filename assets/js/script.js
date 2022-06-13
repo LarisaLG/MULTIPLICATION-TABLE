@@ -1,6 +1,8 @@
 let numbers = document.getElementsByClassName('multiplier');
 let multiplier1 = document.getElementById('operand1');
 let multiplier2 = document.getElementById('operand2');
+let answers = document.getElementsByClassName('answer');
+let buttons = document.getElementsByClassName('btn');
 
 
 
@@ -57,7 +59,33 @@ function calcResult() {
 
 
 // function which outputs random answers for user
-function showAnswers() {}
+function showAnswers() {
+    let trueRes = calcResult();
+    let randomRes = [];
+    randomRes.push(trueRes);
+    //console.log(" 1 true Res is " + trueRes);
+    //console.log("Answers array is " + randomRes.length);
+
+    //creates random numbers and outputs them on button  
+    while (randomRes.length < answers.length) {
+
+    //pushes random numbers in the array
+    let randomNum = (Math.round(Math.random() * (10 * num1) + 1));
+    randomRes.push(randomNum);
+    //	console.log(randomRes);
+    
+    //sorting an Array in Random Order (https://www.w3schools.com/js/js_array_sort.asp)
+    randomRes = randomRes.sort(function () {return 0.5 - Math.random()});
+    //  console.log(`after sorting: ${randomRes}`);
+
+    for (let b = 0; b < answers.length; b++) {
+        //change button content with numbers
+        let btn = document.getElementById("btn" + b);
+        // console.log("btn"+b);
+        btn.innerHTML = randomRes[b];
+        }
+    }
+}
 
 
 //checks which button with answer is clicked
