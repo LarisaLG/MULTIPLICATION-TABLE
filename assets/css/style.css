@@ -1,0 +1,160 @@
+/* --------- Global style */
+
+body {
+    background-color: white;
+    font-family: "Raleway", sans-serif;
+    color: #445361;
+    text-align: center;
+
+}
+
+/* --------- Heading */
+
+.heading {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* .logo {
+    height: 40px;
+    padding-right: 5px;
+} */
+
+/* --------- Game layout */
+
+.game-area {
+    background-color: #E6ECF0;
+    box-sizing: border-box;
+    width: 85%;
+    /*     height: 65vh;
+    max-height: 450px; */
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+}
+
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.multiplier {
+    width: 60px;
+    height: 60px;
+    background-color: green;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+
+}
+
+
+
+
+.exercise {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    width: 50%;
+    font-size: 2rem;
+
+    padding: 50px 0;
+
+}
+
+.exercise span {
+    padding: 0 15px;
+}
+
+
+.btn-results {
+    width: 50%;
+    display: block;
+    /* 	justify-content: center; */
+    /* 	align-items: center; */
+    border-radius: 5px;
+    padding: 10px 16px;
+    margin: auto;
+}
+
+
+.btn {
+    padding: 10px 16px;
+    font-size: 1.5rem;
+    /* 	width: 75px; */
+    margin: 0 5px;
+    /* 	display: none; */
+}
+
+.btn-primary {
+    background-color: blue;
+    border-color: #1ab394;
+    color: #fff;
+}
+
+
+.btn-wrong {
+    background-color: red;
+    border-color: #ed5565;
+    color: #fff;
+}
+
+.btn-info {
+    background-color: orange;
+    border-color: #f8ac59;
+    color: #fff;
+}
+
+.btn-success {
+    background-color: green;
+    border-color: #1c84c6;
+    color: #fff;
+}
+
+.score-area {
+    margin: 5px auto;
+    width: 60%;
+    font-size: 1.2rem;
+}
+
+.controls-area {
+    width: 85%;
+    margin: 30px auto;
+}
+
+#correct {
+    color: green;
+    font-weight: bold;
+}
+
+#incorrect {
+    color: red;
+    font-weight: bold;
+}
+
+/* 
+.answer-msg {
+    display: none;
+    font-size: 1rem;
+} */
+
+/* #answer-box {
+    border: 1px solid green;
+    color: #445361;
+    display: inline-block;
+    height: 40px;
+    width: 80px;
+    font-size: 1.2rem;
+} */
+
+.scores {
+    display: inline-block;
+    padding: 25px;
+}
