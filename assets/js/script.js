@@ -126,3 +126,20 @@ function countErrors() {
     let score = parseInt(document.getElementById('incorrect').innerText);
     document.getElementById('incorrect').innerText = ++score;
 }
+
+
+/**
+ * Counts user missed responses
+ */
+function countMissed() {
+    // let scoreErr = parseInt(document.getElementById("incorrect").innerText);
+    // let scoreCor = parseInt(document.getElementById("correct").innerText);
+    console.log("corr = " + scoreCor);
+    console.log("err = " + scoreErr);
+    missedScores = 10 - (parseInt(scoreErr) + parseInt(scoreCor));
+
+    document.getElementById("missed").innerText = missedScores;
+    console.log("missed =" + missedScores);
+
+    setTimeout(newGame, 5000);
+}
